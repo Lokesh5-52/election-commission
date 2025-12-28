@@ -1,18 +1,42 @@
-.hero {
-  background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("../images/flag.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
-  display: flex;
-  align-items: center;
+/* HERO SECTION */
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("../images/election.png") center/cover no-repeat;
 }
 
-.importance {
-  background:
-    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-    url("../images/election.png");
-  background-size: cover;
-  background-position: center;
+/* QUOTES SECTION */
+.quote-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../images/flag.jpg") center/cover no-repeat;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.quote-section h2 {
+  font-weight: 700;
+}
+
+.blockquote p {
+  font-size: 24px;
+  font-style: italic;
+  animation: fadeSlide 1s ease-in-out;
+}
+
+/* QUOTE ANIMATION */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
