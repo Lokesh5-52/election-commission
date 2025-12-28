@@ -1,24 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About - Election Commission</title>
+  <meta charset="UTF-8">
+  <title>About | Election Commission</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .page-bg {
+      min-height: 100vh;
+      background: linear-gradient(
+          rgba(0,0,0,0.7),
+          rgba(0,0,0,0.7)
+        ),
+        url("assets/images/election.png") center/cover no-repeat;
+      color: #fff;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar (same as above) -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Election Commission</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-<div class="container my-5">
-  <h2>About Election Commission</h2>
-  <p>
-    The Election Commission is an independent constitutional authority
-    responsible for administering free and fair elections in the country.
-  </p>
-</div>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<!-- ABOUT SECTION -->
+<section class="page-bg d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-4">About the Election Commission</h1>
+    <p class="lead">
+      The Election Commission of India is an autonomous constitutional authority
+      responsible for administering free and fair elections in the country.
+    </p>
+    <p>
+      It ensures transparency, accountability, and integrity in the democratic
+      process by conducting elections at national, state, and local levels.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-dark text-white text-center p-3">
-  © 2025 Election Commission
+  © 2025 Election Commission Project
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
